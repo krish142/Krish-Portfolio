@@ -6,6 +6,7 @@ import { Menu } from 'lucide-react';
 import Resume from './Resume';
 import MobileMenu from './MobileMenu';
 import { HeaderLinks } from '@/data/Header';
+import { Toaster } from 'react-hot-toast';
 
 interface HeaderLinksprops {
     id: number,
@@ -29,7 +30,7 @@ const Header: React.FC = () => {
                                 </div>
                             </Link>
                         </div>
-                        <div className='hidden lg:flex lg:gap-6 lg:items-center'>
+                        <div className='hidden lg:flex lg:gap-7 lg:items-center'>
                             {HeaderLinks.map((item: HeaderLinksprops) => (
                                 <li key={item.id} className='list-none'>
                                     <Link href={item.url}>{item.label}</Link>

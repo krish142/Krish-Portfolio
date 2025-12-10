@@ -1,9 +1,13 @@
 "use client";
+import Image from "next/image";
 import React from "react";
+import HeroSection from "./Herosection";
 
 const LandingPage:React.FC = () =>{
     return (
-        <h2>Landing Page</h2>
+        <div>
+            <HeroSection />
+        </div>
     )
 }
 
