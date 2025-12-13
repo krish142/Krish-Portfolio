@@ -1,11 +1,10 @@
 "use client";
-import Image from "next/image";
 import React from "react";
 import HeroSection from "./Herosection";
 
 const LandingPage:React.FC = () =>{
     return (
-        <div>
+        <div className="min-h-screen">
             <HeroSection />
         </div>
     )

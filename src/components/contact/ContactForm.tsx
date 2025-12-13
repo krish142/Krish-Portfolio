@@ -42,22 +42,22 @@ const ContactForm = () => {
     }
 
     return (
-        <div className="max-w-lg  mx-auto shadow-lg rounded-md">
+        <div className="max-w-lg  mx-auto shadow-lg rounded-md bg-background">
             <div className="p-7">
                 <form onSubmit={handlesubmit}>
-                    <div className="py-4">
+                    <div className="py-2">
                         <label>Full Name <span className="text-green-700">*</span></label>
                         <input type="text" name="name" value={ContactData.name} placeholder="Enter Your Full Name.." onChange={(e:React.ChangeEvent<HTMLInputElement>) => {
                             setContactData({...ContactData , name:e.target.value})
                         }} className="w-full border border-green-700 p-2 focus-visible:outline-none my-1 rounded-xs" />
                     </div>
-                    <div className="py-4">
+                    <div className="py-2">
                         <label>Email <span className="text-green-700">*</span></label>
                         <input type="email" value={ContactData.email} name="email" placeholder="Enter Your Working Email.." onChange={(e:React.ChangeEvent<HTMLInputElement>) => {
                             setContactData({...ContactData , email:e.target.value})
                         }} className="w-full border border-green-700 p-2 focus-visible:outline-none my-1 rounded-xs" />
                     </div>
-                    <div className="py-4">
+                    <div className="py-2">
                         <label>Message <span className="text-green-700 text-xs">(optioanl)</span></label>
                         <textarea className="w-full  border border-green-700 p-2 focus-visible:outline-none my-1 rounded-xs" name="message" value={ContactData.message} onChange={(e:React.ChangeEvent<HTMLTextAreaElement>) => {
                             setContactData({...ContactData, message:e.target.value})

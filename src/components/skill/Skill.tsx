@@ -1,5 +1,5 @@
 "use client";
-import { SiJavascript, SiTypescript, SiHtml5, SiCss3, SiReact, SiNextdotjs, SiSpringboot, SiNodedotjs, SiExpress, SiTailwindcss, SiMui, SiShadcnui, SiMongodb, SiMysql, SiGit, SiGithub,SiPostman } from "react-icons/si";
+import { SiJavascript, SiTypescript, SiHtml5, SiCss3, SiReact, SiNextdotjs, SiSpringboot, SiNodedotjs, SiExpress, SiTailwindcss, SiMui, SiShadcnui, SiMongodb, SiMysql, SiGit, SiGithub, SiPostman } from "react-icons/si";
 import { FaJava } from "react-icons/fa";
 
 const ProgrammingLanguage = [
@@ -68,19 +68,19 @@ const FrameWork = [
     },
     {
         id: 6,
-        icon: <SiTailwindcss  />,
+        icon: <SiTailwindcss />,
         name: "Tailwind Css",
         percent: "75%"
     },
     {
         id: 7,
-        icon: <SiMui  />,
+        icon: <SiMui />,
         name: "Material UI",
         percent: "50%"
     },
     {
         id: 8,
-        icon: <SiShadcnui  />,
+        icon: <SiShadcnui />,
         name: "Shadcn UI",
         percent: "45%"
     }
@@ -89,13 +89,13 @@ const FrameWork = [
 const Databases = [
     {
         id: 1,
-        icon: <SiMongodb  />,
+        icon: <SiMongodb />,
         name: "MongoDB",
         percent: "70%"
     },
     {
         id: 2,
-        icon: <SiMysql  />,
+        icon: <SiMysql />,
         name: "MySQL",
         percent: "60%"
     }
@@ -105,13 +105,13 @@ const Databases = [
 const VersionControl = [
     {
         id: 1,
-        icon: <SiGit   />,
+        icon: <SiGit />,
         name: "Git",
         percent: "75%"
     },
     {
         id: 2,
-        icon: <SiGithub   />,
+        icon: <SiGithub />,
         name: "GitHub",
         percent: "70%"
     }
@@ -120,7 +120,7 @@ const VersionControl = [
 const Testing = [
     {
         id: 1,
-        icon: <SiPostman   />,
+        icon: <SiPostman />,
         name: "Postman",
         percent: "60%"
     }
@@ -128,16 +128,19 @@ const Testing = [
 
 const Skill: React.FC = () => {
     return (
-        <div className="min-h-screen">
-            <div className="py-5 lg:py-10">
+        <div className="min-h-screen bg-gray-100">
+            <div className="py-5 lg:py-10 px-5">
                 <div className="max-w-7xl mx-auto">
-                    <h2 className="text-center font-bold text-3xl lg:text-5xl py-5">Skills</h2>
+                    <div className='py-5'>
+                        <h2 className="text-4xl font-bold">Skill</h2>
+                        <div className="h-1 w-10 bg-green-700 my-2"></div>
+                    </div>
                     {/* {Progrmming Language} */}
                     <div className="py-3">
-                        <h2 className="px-5 py-2 font-semibold text-xl">Programming Language</h2>
-                        <div className="grid grid-cols-3 md:grid-cols-4 lg:grid-cols-9 gap-4 px-5">
+                        <h2 className="py-2 font-semibold text-xl">Programming Language</h2>
+                        <div className="grid grid-cols-3 md:grid-cols-4 lg:grid-cols-9 gap-4">
                             {ProgrammingLanguage.map((skill) => (
-                                <div key={skill.id} className="border p-3 cursor-pointer flex flex-col items-center gap-1 rounded-md transition-transform duration-300 hover:scale-[1.1]">
+                                <div key={skill.id} className="border p-3 cursor-pointer flex flex-col items-center gap-1 rounded-md transition-transform duration-300 hover:scale-[1.1] bg-background">
                                     <span className="text-4xl">{skill.icon}</span>
                                     <span className="text-center font-extrabold text-sm">{skill.percent}</span>
                                     <span className="text-sm font-semibold text-green-700">{skill.name}</span>
@@ -147,10 +150,10 @@ const Skill: React.FC = () => {
                     </div>
                     {/* {Frameworks and library} */}
                     <div className="py-3">
-                        <h2 className="px-5 py-2 font-semibold text-xl">Frameworks & Library</h2>
-                        <div className="grid grid-cols-3 md:grid-cols-4 lg:grid-cols-9 gap-4 px-5">
+                        <h2 className="py-2 font-semibold text-xl">Frameworks & Library</h2>
+                        <div className="grid grid-cols-3 md:grid-cols-4 lg:grid-cols-9 gap-4">
                             {FrameWork.map((skill) => (
-                                <div key={skill.id} className="border p-3 cursor-pointer flex flex-col items-center gap-1 rounded-md transition-transform duration-300 hover:scale-[1.1]">
+                                <div key={skill.id} className="border p-3 cursor-pointer flex flex-col items-center gap-1 rounded-md transition-transform duration-300 hover:scale-[1.1] bg-background">
                                     <span className="text-4xl">{skill.icon}</span>
                                     <span className="text-center font-extrabold text-sm">{skill.percent}</span>
                                     <span className="text-sm font-semibold text-green-700">{skill.name}</span>
@@ -160,10 +163,10 @@ const Skill: React.FC = () => {
                     </div>
                     {/* {Databases} */}
                     <div className="py-3">
-                        <h2 className="px-5 py-2 font-semibold text-xl">Databases</h2>
-                        <div className="grid grid-cols-3 md:grid-cols-4 lg:grid-cols-9 gap-4 px-5">
+                        <h2 className="py-2 font-semibold text-xl">Databases</h2>
+                        <div className="grid grid-cols-3 md:grid-cols-4 lg:grid-cols-9 gap-4">
                             {Databases.map((skill) => (
-                                <div key={skill.id} className="border p-3 cursor-pointer flex flex-col items-center gap-1 rounded-md transition-transform duration-300 hover:scale-[1.1]">
+                                <div key={skill.id} className="border p-3 cursor-pointer flex flex-col items-center gap-1 rounded-md transition-transform duration-300 hover:scale-[1.1] bg-background">
                                     <span className="text-4xl">{skill.icon}</span>
                                     <span className="text-center font-extrabold text-sm">{skill.percent}</span>
                                     <span className="text-sm font-semibold text-green-700">{skill.name}</span>
@@ -173,10 +176,10 @@ const Skill: React.FC = () => {
                     </div>
                     {/* {Version Control} */}
                     <div className="py-3">
-                        <h2 className="px-5 py-2 font-semibold text-xl">Version Control</h2>
-                        <div className="grid grid-cols-3 md:grid-cols-4 lg:grid-cols-9 gap-4 px-5">
+                        <h2 className="py-2 font-semibold text-xl">Version Control</h2>
+                        <div className="grid grid-cols-3 md:grid-cols-4 lg:grid-cols-9 gap-4">
                             {VersionControl.map((skill) => (
-                                <div key={skill.id} className="border p-3 cursor-pointer flex flex-col items-center gap-1 rounded-md transition-transform duration-300 hover:scale-[1.1]">
+                                <div key={skill.id} className="border p-3 cursor-pointer flex flex-col items-center gap-1 rounded-md transition-transform duration-300 hover:scale-[1.1] bg-background">
                                     <span className="text-4xl">{skill.icon}</span>
                                     <span className="text-center font-extrabold text-sm">{skill.percent}</span>
                                     <span className="text-sm font-semibold text-green-700">{skill.name}</span>
@@ -186,10 +189,10 @@ const Skill: React.FC = () => {
                     </div>
                     {/* {Testing} */}
                     <div className="py-3">
-                        <h2 className="px-5 py-2 font-semibold text-xl">Tersting</h2>
-                        <div className="grid grid-cols-3 md:grid-cols-4 lg:grid-cols-9 gap-4 px-5">
+                        <h2 className="py-2 font-semibold text-xl">Tersting</h2>
+                        <div className="grid grid-cols-3 md:grid-cols-4 lg:grid-cols-9 gap-4">
                             {Testing.map((skill) => (
-                                <div key={skill.id} className="border p-3 cursor-pointer flex flex-col items-center gap-1 rounded-md transition-transform duration-300 hover:scale-[1.1]">
+                                <div key={skill.id} className="border p-3 cursor-pointer flex flex-col items-center gap-1 rounded-md transition-transform duration-300 hover:scale-[1.1] bg-background">
                                     <span className="text-4xl">{skill.icon}</span>
                                     <span className="text-center font-extrabold text-sm">{skill.percent}</span>
                                     <span className="text-sm font-semibold text-green-700">{skill.name}</span>
