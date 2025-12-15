@@ -80,8 +80,8 @@ export const ProjectLandingPage: React.FC = () => {
                                     <h3 className="font-bold text-xl">{item.name}</h3>
                                     <p className="text-gray-700 font-semibold">{item.description}</p>
                                     <div className="flex gap-3 py-1">
-                                        <span className="px-4 py-2 bg-green-700 text-sm text-white font-semibold rounded-md border border-green-700"><Link href="/" >View Project</Link></span>
-                                        <span className="px-4 py-2 text-green-700 text-sm  font-semibold rounded-md border border-green-700 "><Link href="/" >Source Code</Link></span>
+                                        <span className="px-4 py-2 bg-green-700 text-sm text-white font-semibold rounded-md border border-green-700"><Link href="/projects/building" >View Project</Link></span>
+                                        <span className="px-4 py-2 text-green-700 text-sm  font-semibold rounded-md border border-green-700 "><Link href="/projects/building" >Source Code</Link></span>
                                     </div>
                                 </div>
                             </div>

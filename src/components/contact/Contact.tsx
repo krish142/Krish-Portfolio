@@ -44,7 +44,7 @@ const Contact: React.FC = () => {
                                 <div className="h-1 w-20 bg-green-700 my-2"></div>
                             </div>
                             <div>
-                                <p className="max-w-md">I'm currently open to new opportunities. If you have a project in mind or just want to say hi, feel free to send me a message.</p>
+                                <p className="max-w-md">I&apos;m currently open to new opportunities. If you have a project in mind or just want to say hi, feel free to send me a message.</p>
                             </div>
                             <div className="space-y-3">
                                 {

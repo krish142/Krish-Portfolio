@@ -5,6 +5,7 @@ import React from "react";
 import Resume from "./Resume";
 import { X } from 'lucide-react';
 import { HeaderLinks } from "@/data/Header";
+import { usePathname } from "next/navigation";
 
 interface MobileMenuProps {
     onClose: () => void;
@@ -18,6 +19,7 @@ interface HeaderLinksprops {
 
 
 const MobileMenu: React.FC<MobileMenuProps> = ({ onClose }) => {
+    const pathname = usePathname();
     return (
         <div className="fixed inset-0 bg-white z-100 w-full h-full">
             <div className="flex justify-between items-center shadow-sm p-6">
@@ -36,11 +38,15 @@ const MobileMenu: React.FC<MobileMenuProps> = ({ onClose }) => {
                 </div>
             </div>
             <div className='flex flex-col gap-5 lg:items-center p-5 '>
-                {HeaderLinks.map((item: HeaderLinksprops) => (
-                    <li key={item.id} className='list-none py-1'>
-                        <Link href={item.url} onClick={onClose}>{item.label}</Link>
-                    </li>
-                ))}
+                {HeaderLinks.map((item: HeaderLinksprops) => {
+                    const isActive = pathname == item.url
+                    return (
+                        <li key={item.id} className='list-none'>
+                            <Link href={item.url} className={`px-3 py-2 rounded-sm  ${isActive ? "text-green-700 bg-green-50" : "text-black"}`}>{item.label}</Link>
+                        </li>
+                    )
+                }
+                )}
                 <span className="flex md:hidden"><Resume /></span>
             </div>
 

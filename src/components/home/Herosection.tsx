@@ -15,7 +15,7 @@ const HeroSection: React.FC = () => {
                                 <h2 className="font-extrabold text-3xl lg:text-5xl max-w-xl text-center">Creating web products, brands, <span className="text-green-700">and experience</span> </h2>
                             </div>
                             <div className="inline-block text-center text-xl font-semibold px-2">
-                                Hi, I'm Krish - A Passionate {" "}
+                                Hi, I&apos;m Krish - A Passionate {" "}
                                 <span className="lg:inline-block block text-green-700">
                                     <Typewriter options={{
                                         strings: [
