@@ -1,5 +1,6 @@
 import { ConnectDB } from "@/lib/db";
 import Contact from "@/model/Contact";
+import { sendContactFormEmail, sendContactFormToTeam, sendEmail } from "../mailService/MailService";
 
 export async function POST(req: Request) {
     try {
@@ -21,6 +22,9 @@ export async function POST(req: Request) {
             );
         }
 
+        sendContactFormEmail(name, email);
+        sendContactFormToTeam(name, email)
+
         await Contact.create({
             name,
             email,
@@ -35,6 +39,6 @@ export async function POST(req: Request) {
         return Response.json(
             { message: "Internal Server Error" },
             { status: 500 }
-          );
+        );
     }
 }
