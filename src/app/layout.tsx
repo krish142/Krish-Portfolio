@@ -8,7 +8,7 @@ const inter = Inter({
 })
 
 export const metadata: Metadata = {
-  title: "Krish | Frontend Developer",
+  title: "Krish Portfolio",
   description: "Creating modern, responsive, and high-performance web experiences using Next.js, React, and TypeScript.",
   keywords: ["Next.js", "React", "TypeScript", "Frontend Developer", "Web Development", "Portfolio"],
   authors: [{ name: "Krish Kunwar"}],

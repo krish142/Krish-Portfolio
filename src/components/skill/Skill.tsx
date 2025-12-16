@@ -140,10 +140,10 @@ const Skill: React.FC = () => {
                         <h2 className="py-2 font-semibold text-xl">Programming Language</h2>
                         <div className="grid grid-cols-3 md:grid-cols-4 lg:grid-cols-9 gap-4">
                             {ProgrammingLanguage.map((skill) => (
-                                <div key={skill.id} className="border p-3 cursor-pointer flex flex-col items-center gap-1 rounded-md transition-transform duration-300 hover:scale-[1.1] bg-background">
+                                <div key={skill.id} className="p-3 cursor-pointer flex flex-col items-center gap-1 shadow-md rounded-md transition-transform duration-300 hover:scale-[1.1] bg-background">
                                     <span className="text-4xl">{skill.icon}</span>
                                     <span className="text-center font-extrabold text-sm">{skill.percent}</span>
-                                    <span className="text-sm font-semibold text-green-700">{skill.name}</span>
+                                    <span className="text-sm font-semibold text-green-700 text-center">{skill.name}</span>
                                 </div>
                             ))}
                         </div>
@@ -153,10 +153,10 @@ const Skill: React.FC = () => {
                         <h2 className="py-2 font-semibold text-xl">Frameworks & Library</h2>
                         <div className="grid grid-cols-3 md:grid-cols-4 lg:grid-cols-9 gap-4">
                             {FrameWork.map((skill) => (
-                                <div key={skill.id} className="border p-3 cursor-pointer flex flex-col items-center gap-1 rounded-md transition-transform duration-300 hover:scale-[1.1] bg-background">
+                                <div key={skill.id} className="shadow-md p-3 cursor-pointer flex flex-col items-center gap-1 rounded-md transition-transform duration-300 hover:scale-[1.1] bg-background">
                                     <span className="text-4xl">{skill.icon}</span>
                                     <span className="text-center font-extrabold text-sm">{skill.percent}</span>
-                                    <span className="text-sm font-semibold text-green-700">{skill.name}</span>
+                                    <span className="text-sm font-semibold text-green-700 text-center">{skill.name}</span>
                                 </div>
                             ))}
                         </div>
@@ -166,10 +166,10 @@ const Skill: React.FC = () => {
                         <h2 className="py-2 font-semibold text-xl">Databases</h2>
                         <div className="grid grid-cols-3 md:grid-cols-4 lg:grid-cols-9 gap-4">
                             {Databases.map((skill) => (
-                                <div key={skill.id} className="border p-3 cursor-pointer flex flex-col items-center gap-1 rounded-md transition-transform duration-300 hover:scale-[1.1] bg-background">
+                                <div key={skill.id} className="shadow-md p-3 cursor-pointer flex flex-col items-center gap-1 rounded-md transition-transform duration-300 hover:scale-[1.1] bg-background">
                                     <span className="text-4xl">{skill.icon}</span>
                                     <span className="text-center font-extrabold text-sm">{skill.percent}</span>
-                                    <span className="text-sm font-semibold text-green-700">{skill.name}</span>
+                                    <span className="text-sm font-semibold text-green-700 text-center">{skill.name}</span>
                                 </div>
                             ))}
                         </div>
@@ -179,10 +179,10 @@ const Skill: React.FC = () => {
                         <h2 className="py-2 font-semibold text-xl">Version Control</h2>
                         <div className="grid grid-cols-3 md:grid-cols-4 lg:grid-cols-9 gap-4">
                             {VersionControl.map((skill) => (
-                                <div key={skill.id} className="border p-3 cursor-pointer flex flex-col items-center gap-1 rounded-md transition-transform duration-300 hover:scale-[1.1] bg-background">
+                                <div key={skill.id} className="shadow-md p-3 cursor-pointer flex flex-col items-center gap-1 rounded-md transition-transform duration-300 hover:scale-[1.1] bg-background">
                                     <span className="text-4xl">{skill.icon}</span>
                                     <span className="text-center font-extrabold text-sm">{skill.percent}</span>
-                                    <span className="text-sm font-semibold text-green-700">{skill.name}</span>
+                                    <span className="text-sm font-semibold text-green-700 text-center">{skill.name}</span>
                                 </div>
                             ))}
                         </div>
@@ -192,10 +192,10 @@ const Skill: React.FC = () => {
                         <h2 className="py-2 font-semibold text-xl">Tersting</h2>
                         <div className="grid grid-cols-3 md:grid-cols-4 lg:grid-cols-9 gap-4">
                             {Testing.map((skill) => (
-                                <div key={skill.id} className="border p-3 cursor-pointer flex flex-col items-center gap-1 rounded-md transition-transform duration-300 hover:scale-[1.1] bg-background">
+                                <div key={skill.id} className="shadow-md p-3 cursor-pointer flex flex-col items-center gap-1 rounded-md transition-transform duration-300 hover:scale-[1.1] bg-background">
                                     <span className="text-4xl">{skill.icon}</span>
                                     <span className="text-center font-extrabold text-sm">{skill.percent}</span>
-                                    <span className="text-sm font-semibold text-green-700">{skill.name}</span>
+                                    <span className="text-sm font-semibold text-green-700 text-center">{skill.name}</span>
                                 </div>
                             ))}
                         </div>
