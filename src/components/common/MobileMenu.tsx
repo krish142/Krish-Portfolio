@@ -21,8 +21,8 @@ interface HeaderLinksprops {
 const MobileMenu: React.FC<MobileMenuProps> = ({ onClose }) => {
     const pathname = usePathname();
     return (
-        <div className="fixed inset-0 bg-background z-100 w-full h-full">
-            <div className="flex justify-between items-center shadow-sm p-6">
+        <div className="fixed inset-0 bg-background-secondary z-100 w-full h-full">
+            <div className="flex justify-between bg-background items-center shadow-sm p-6 z-200">
                 <div>
                     <Link href="/">
                         <div className='flex gap-2 items-center'>
