@@ -59,11 +59,11 @@ const Data = [
 
 export const ProjectLandingPage: React.FC = () => {
     return (
-        <div className="bg-gray-100">
+        <div className="bg-background-secondary">
             <div className="py-10 px-5">
                 <div className="max-w-4xl mx-auto">
                     <h2 className="text-4xl font-bold">Featured Projects</h2>
-                    <div className="h-1 w-20 bg-green-700 mt-1"></div>
+                    <div className="h-1 w-20 bg-primary mt-1"></div>
                     <p className="py-4">Building seamless digital experiences through modern web technologies.</p>
                     <div className="space-y-5">
                         {Data.map((item) => (

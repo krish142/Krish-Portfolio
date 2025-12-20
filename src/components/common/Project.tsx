@@ -5,8 +5,8 @@ import Link from "next/link";
 
 const Project: React.FC = () => {
     return (
-        <div className="min-h-screen w-full flex items-center justify-center bg-gray-100 px-5">
-            <div className="max-w-3xl mx-auto shadow-md rounded-md bg-white">
+        <div className="min-h-screen w-full flex items-center justify-center bg-background-secondary px-5">
+            <div className="max-w-3xl mx-auto shadow-md rounded-md bg-background">
                 <div className="grid grid-cols-1 md:grid-cols-2 p-5 gap-5">
                     <div>
                         <Image src="/images/On-progess.avif" alt="on-progess" width={400} height={400} />

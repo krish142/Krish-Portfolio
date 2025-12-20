@@ -34,7 +34,7 @@ const contactData = [
 
 const Contact: React.FC = () => {
     return (
-        <div className="bg-gray-100">
+        <div className="bg-background-secondary">
             <div className="py-10">
                 <div className="max-w-7xl mx-auto">
                     <div className="grid grid-cols-1 md:grid-cols-2 px-5">

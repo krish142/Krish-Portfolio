@@ -128,7 +128,7 @@ const Testing = [
 
 const Skill: React.FC = () => {
     return (
-        <div className="min-h-screen bg-gray-100">
+        <div className="min-h-screen bg-background-secondary">
             <div className="py-5 lg:py-10 px-5">
                 <div className="max-w-7xl mx-auto">
                     <div className='py-5'>

@@ -9,7 +9,7 @@ import Contact from "../contact/Contact";
 
 const LandingPage:React.FC = () =>{
     return (
-        <div className="min-h-screen bg-gray-100">
+        <div className="min-h-screen bg-background-secondary">
             <HeroSection />
             <Experience />
             <Education />

@@ -1,6 +1,6 @@
 import { ConnectDB } from "@/lib/db";
 import Contact from "@/model/Contact";
-import { sendContactFormEmail, sendContactFormToTeam, sendEmail } from "../mailService/MailService";
+import { sendContactFormEmail, sendContactFormToTeam } from "../mailService/MailService";
 
 export async function POST(req: Request) {
     try {

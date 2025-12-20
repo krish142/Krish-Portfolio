@@ -20,7 +20,7 @@ const EducationData = [
 
 const Education: React.FC = () => {
     return (
-        <div className='bg-gray-100'>
+        <div className='bg-background-secondary'>
             <div className="py-10 lg:py-15  px-5">
                 <div className="max-w-5xl mx-auto">
                     <div className='py-5 lg:py-10'>
