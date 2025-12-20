@@ -15,7 +15,7 @@ const SocialLinks:React.FC = () => {
     return (
         <div className="flex gap-3 items-center">
             {SocialLinksData.map((link: SocialLinksProps) => (
-                <span key={link.id} className=" p-2.5 rounded-full bg-gray-200 transition-all duration-300">
+                <span key={link.id} className=" p-2.5 rounded-full bg-primary text-white transition-all duration-300">
                     <Link href={link.url} target="_blank">{link.icon}</Link>
                 </span>
 
