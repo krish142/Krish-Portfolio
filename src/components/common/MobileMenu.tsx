@@ -21,12 +21,12 @@ interface HeaderLinksprops {
 const MobileMenu: React.FC<MobileMenuProps> = ({ onClose }) => {
     const pathname = usePathname();
     return (
-        <div className="fixed inset-0 bg-white z-100 w-full h-full">
+        <div className="fixed inset-0 bg-background z-100 w-full h-full">
             <div className="flex justify-between items-center shadow-sm p-6">
                 <div>
                     <Link href="/">
                         <div className='flex gap-2 items-center'>
-                            <span className='p-2 bg-green-700 text-white rounded-full'><CodeXml size={20} /></span>
+                            <span className='p-2 bg-primary text-white rounded-full'><CodeXml size={20} /></span>
                             <span className='font-bold'>KRISH</span>
                         </div>
                     </Link>
