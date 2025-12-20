@@ -36,7 +36,7 @@ const Education: React.FC = () => {
                                 </div>
                                 <p className='text-green-700 font-semibold'>{item.year}</p>
                                 <p className='font-semibold md:text-lg text-[16px]'>{item.degreeName}</p>
-                                <p className='font-semibold text-gray-700 text-sm md:text-[16px]'>{item.collageName}</p>
+                                <p className='font-semibold text-tertiary text-sm md:text-[16px]'>{item.collageName}</p>
                                 <p className='w-full h-0.5 bg-gray-300 mt-4'></p>
                             </div>
                         ))}

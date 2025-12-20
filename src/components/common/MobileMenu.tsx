@@ -42,7 +42,7 @@ const MobileMenu: React.FC<MobileMenuProps> = ({ onClose }) => {
                     const isActive = pathname == item.url
                     return (
                         <li key={item.id} className='list-none'>
-                            <Link href={item.url} className={`px-3 py-2 rounded-sm  ${isActive ? "text-green-700 bg-green-50" : "text-black"}`}>{item.label}</Link>
+                            <Link href={item.url} className={`px-3 py-2 rounded-sm text-secondary  ${isActive ? "text-green-700 bg-green-50" : "text-black"}`}>{item.label}</Link>
                         </li>
                     )
                 }
